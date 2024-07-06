@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -16,18 +15,19 @@
                 <span>Cylinder</span>
                 <p>Enter your cylinder values to calculate</p>
             </section>
-            <form>
+            <form id="cylinder-form">
                 <div class="input-box">
-                    <input type="number" name="radious" id="radious" placeholder="Radious">
-                    <input type="number" name="height" id="height" placeholder="Height">
+                    <input type="number" name="radious" id="radious" placeholder="Radious" min="1">
+                    <input type="number" name="height" id="height" placeholder="Height" min="1">
                 </div>
                 <div class="calculate-box">
                     <button type="submit">Calculate</button>
-                    <p class="ans-txt">Ans: <span class="focus-txt">0</span></p>
+                    <p class="ans-txt">volume: <span class="focus-txt" id="cylinder-volume">0</span></p>
                 </div>
             </form>
         </div>
       </main>
     </div>
+    <script src="../index.js"></script>
   </body>
 </html>

@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Cones</h1>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <main class="card">
+        <img src="../public/cone.png" alt="cylinder" />
+        <div class="card-container">
+            <section class="header-txt-box">
+                <span>Cones</span>
+                <p>Enter your cones values to calculate</p>
+            </section>
+            <form id="cones-form">
+                <div class="input-box">
+                    <input type="number" name="radious" id="radious" placeholder="Radious" min="1">
+                    <input type="number" name="height" id="height" placeholder="Height" min="1">
+                </div>
+                <div class="calculate-box">
+                    <button type="submit">Calculate</button>
+                    <p class="ans-txt">volume: <span class="focus-txt" id="cones-volume">0</span></p>
+                </div>
+            </form>
+        </div>
+      </main>
+    </div>
+    <script src="../index.js"></script>
+  </body>
 </html>

@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Spheres</h1>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <main class="card">
+        <img src="../public/sphere.png" alt="Sphere" />
+        <div class="card-container">
+            <section class="header-txt-box">
+                <span>Sphere</span>
+                <p>Enter your Sphere values to calculate</p>
+            </section>
+            <form id="sphere-form">
+                <div class="input-box">
+                    <input type="number" name="radious" id="radious" placeholder="Radious" min="1">
+                </div>
+                <div class="calculate-box">
+                    <button type="submit">Calculate</button>
+                    <p class="ans-txt">volume: <span class="focus-txt" id="sphere-volume">0</span></p>
+                </div>
+            </form>
+        </div>
+      </main>
+    </div>
+    <style>
+      input{
+        width: 100%;
+      }
+    </style>
+    <script src="../index.js"></script>
+  </body>
 </html>
