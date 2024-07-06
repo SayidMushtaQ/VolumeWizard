@@ -7,8 +7,6 @@ VolumeWizard is your go-to app for calculating volumes of cones, cylinders, and 
 - Calculate the volume of cones
 - Calculate the volume of cylinders
 - Calculate the volume of spheres
-- User-friendly interface
-- Precise and accurate results
 
 ## Volume Formulas
 
