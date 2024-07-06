@@ -16,7 +16,7 @@ function formDataHandler(e) {
 }
 
 if (cylinder) {
-  cylinder_form.addEventListener("submit", (e) => {
+  cylinder.addEventListener("submit", (e) => {
     const { radious, height } = formDataHandler(e);
     const volume = PI * Math.pow(radious, 2) * height; 
     cylinder_volume_ans_box.innerHTML = (
@@ -26,7 +26,7 @@ if (cylinder) {
 }
 
 if (cones) {
-  cones_form.addEventListener("submit", (e) => {
+  cones.addEventListener("submit", (e) => {
     const {radious, height} = formDataHandler(e);
     const volume = (PI * radious ** 2 * height) / 3; //Math.pow() = ** -> SQR
     cones_volume_ans_box.innerHTML = volume.toFixed(2);
@@ -34,7 +34,7 @@ if (cones) {
 }
 
 if(sphere){
-  sphere_form.addEventListener('submit',(e)=>{
+  sphere.addEventListener('submit',(e)=>{
     const {radious} = formDataHandler(e);
     const volume = (4 * PI * Math.pow(radious,3)) / 3; // Math.pow(radious,3) = radious ** 3
     sphere_volume_ans_box.innerHTML = volume.toFixed(2);
