@@ -1,10 +1,10 @@
 const PI = Math.PI; //approx(~) value of pi
 
-const cylinder_form = document.getElementById("cylinder-form");
+const cylinder = document.getElementById("cylinder-form");
 const cylinder_volume_ans_box = document.getElementById("cylinder-volume");
-const cones_form = document.getElementById("cones-form");
+const cones = document.getElementById("cones-form");
 const cones_volume_ans_box = document.getElementById("cones-volume");
-const sphere_form = document.getElementById("sphere-form");
+const sphere = document.getElementById("sphere-form");
 const sphere_volume_ans_box = document.getElementById("sphere-volume");
 
 
@@ -15,7 +15,7 @@ function formDataHandler(e) {
   return formProps;
 }
 
-if (cylinder_form) {
+if (cylinder) {
   cylinder_form.addEventListener("submit", (e) => {
     const { radious, height } = formDataHandler(e);
     const volume = PI * Math.pow(radious, 2) * height; 
@@ -25,7 +25,7 @@ if (cylinder_form) {
   });
 }
 
-if (cones_form) {
+if (cones) {
   cones_form.addEventListener("submit", (e) => {
     const {radious, height} = formDataHandler(e);
     const volume = (PI * radious ** 2 * height) / 3; //Math.pow() = ** -> SQR
@@ -33,7 +33,7 @@ if (cones_form) {
   });
 }
 
-if(sphere_form){
+if(sphere){
   sphere_form.addEventListener('submit',(e)=>{
     const {radious} = formDataHandler(e);
     const volume = (4 * PI * Math.pow(radious,3)) / 3; // Math.pow(radious,3) = radious ** 3
